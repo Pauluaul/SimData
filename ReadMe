@@ -1,0 +1,8 @@
+The files Circle, Cube, Ellipsoid are able to simulate/generate a volume with bodies.
+The helper file is only for the euler angles and exist just for ludicity.
+
+To use the Circle, Cube or Ellipsoid class just run it.
+The size of the volume, size of bodies and count of bodies can be changed in each file.
+
+Notice! If to many bodies are made (or just when the random placement is unlucky), the code will dismiss some of them, if the new body would overlap onto another one.
+If you want to force the amount of bodies, just set "i" back by one each time an overlap is happening. This however could result in the code running forever.
