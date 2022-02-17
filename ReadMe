@@ -1,4 +1,4 @@
-The files Circle, Cube, Ellipsoid are able to simulate/generate a volume with bodies.
+The files circle, cube, ellipsoid are able to simulate/generate a volume with bodies.
 The helper file is only for the euler angles and exist just for ludicity.
 
 To use the Circle, Cube or Ellipsoid class just run it.
@@ -6,3 +6,22 @@ The size of the volume, size of bodies and count of bodies can be changed in eac
 
 Notice! If to many bodies are made (or just when the random placement is unlucky), the code will dismiss some of them, if the new body would overlap onto another one.
 If you want to force the amount of bodies, just set "i" back by one each time an overlap is happening. This however could result in the code running forever.
+
+
+In the trained_generators folder are trained generators for alle of the three simulation scenarios. If you want to use them, you need to edit the "run_slicegan.py".
+You get the SliceGan from Kench and Cooper here: https://github.com/stke9/SliceGAN
+
+In the run_slicegan file the Project_dir needs to be edited to the directory where the trained generator lies.
+#Project_dir = 'Trained_Generators/NMC
+
+The project name needs to be changed to CircleGen/SquareGen/EllipsoidGen
+
+#Project_name = 'NMC_exemplar_final'
+
+The generated volume will be in the project directory.
+
+
+To visualize the volume you can use the visualize.py file.
+Just change the path in imread to your desired generated volume.
+
+#pic = tifffile.imread("trained_generators\CircleGen\CircleGen.tif")
