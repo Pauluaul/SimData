@@ -22,6 +22,6 @@ The generated volume will be in the project directory.
 
 
 To visualize the volume you can use the visualize.py file.
-Just change the path in imread to your desired generated volume.
+Just change the path in imread to your desired generated volume, a Circle volume is prepared, just run the visualize.py file to see.
 
 #pic = tifffile.imread("trained_generators\CircleGen\CircleGen.tif")
