@@ -1,5 +1,5 @@
 The files circle, cube, ellipsoid are able to simulate/generate a volume with bodies.
-The helper file is only for the euler angles and exist just for ludicity.
+The helper file is only for the euler angles and exist just for lucidity.
 
 To use the Circle, Cube or Ellipsoid class just run it.
 The size of the volume, size of bodies and count of bodies can be changed in each file.
